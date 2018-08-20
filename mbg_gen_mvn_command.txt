@@ -1,0 +1,5 @@
+// 通用Mapper逆向工程官方操作文档
+https://github.com/abel533/Mapper/wiki/4.1.mappergenerator
+
+// 通过 mvn 命令，启动逆向工程
+mvn mybatis-generator:generate
