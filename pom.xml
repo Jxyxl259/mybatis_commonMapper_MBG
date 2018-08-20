@@ -48,6 +48,14 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- mybatis依赖 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.2.8</version>
+        </dependency>
+
+        <!-- 通用Mapper依赖 -->
         <dependency>
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper</artifactId>
@@ -55,6 +63,7 @@
             <!-- <version>最新版本</version> -->
         </dependency>
 
+        <!-- MySql Connector -->
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>

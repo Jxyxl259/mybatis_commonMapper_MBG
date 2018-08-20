@@ -1,5 +1,10 @@
 // 通用Mapper逆向工程官方操作文档
 https://github.com/abel533/Mapper/wiki/4.1.mappergenerator
 
+// RowBounds报错，可能少mybatis依赖， @Id @Table注解报错，可能少通用Mapper依赖
+
+// resources目录下的mapper目录以及src/main/java目录下的tk都是逆向工程生成文件的目录，
+// 重新利用该项目时先删除这两个对应的目录，再去生成
+
 // 通过 mvn 命令，启动逆向工程
 mvn mybatis-generator:generate

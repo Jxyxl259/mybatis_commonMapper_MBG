@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="jdbc.properties"/>
+
+    <typeAliases>
+        <typeAlias alias="Employee" type="tk.mybatis.mapper.model.Employee" />
+    </typeAliases>
+
+    <!-- 配置MyBatis运行环境 -->
+    <environments default="development">
+
+        <!-- 配置专门用于开发过程的运行环境 -->
+        <environment id="development">
+
+            <!-- 配置事务管理器 -->
+            <transactionManager type="JDBC" />
+
+            <!-- 配置数据源 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driverClass}" />
+                <property name="url" value="${jdbc.url}" />
+                <property name="username" value="${jdbc.user}" />
+                <property name="password" value="${jdbc.password}" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <!--<mapper resource="com/mybatis3/mappers/StudentMapper.xml" />-->
+        <package name="tk.mybatis.mapper.mapper"/>
+    </mappers>
+
+</configuration>
